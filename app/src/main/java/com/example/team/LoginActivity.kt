@@ -1,6 +1,8 @@
 package com.example.team
 
 import android.os.Bundle
+import android.view.View
+import android.widget.EditText
 import com.google.android.material.snackbar.Snackbar
 import androidx.appcompat.app.AppCompatActivity
 
@@ -11,12 +13,13 @@ class LoginActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
-        setSupportActionBar(toolbar)
 
-        fab.setOnClickListener { view ->
-            Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                .setAction("Action", null).show()
-        }
     }
+
+    fun loginAccount (view : View){
+        val email = findViewById<EditText>(R.id.emailEditText).text.toString()
+        val password = findViewById<EditText>(R.id.passwdEditText).text.toString()
+    }
+
 
 }
