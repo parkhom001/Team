@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Team</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="app_title">CurrApp</string>
+    <string name="login_btn">Login</string>
+    <string name="sign_up_btn">Sign Up</string>
+    <string name="email_text_field">Email</string>
+    <string name="password_text_field">Password</string>
 </resources>
